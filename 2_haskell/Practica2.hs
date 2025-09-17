@@ -1,5 +1,3 @@
-
-
 -- 1. Promedio de 4 números
 promedio4 :: Float -> Float -> Float -> Float -> Float
 promedio4 a b c d = (a + b + c + d) / 4
