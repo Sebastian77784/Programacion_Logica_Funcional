@@ -83,3 +83,40 @@ redondeo(X, N, R) :-
 %redondeo(1.8545875487,3,R)
 %redondeo(1.784578754,3,R).
 %R = 1.785.
+
+%menor que
+menor_que(X,Y, R) :- R is X < Y.
+ 
+%mayor que
+mayor_que(X,Y, R) :- R is X > Y.
+ 
+%menor o igual que y
+menor_igual(X,Y, R) :- R is X = Y.
+ 
+%mayor o igual que
+mayor_igual(X,Y, R) :- R is X => Y.
+ 
+%es igual que
+igual(X,Y, R) :- R is X = Y.
+ 
+%es distinto que
+igual(X,Y, R) :- R is X \= Y.
+ 
+ 
+%a expresion es igual que la expresion y
+expresion_igual(X,Y, R) :- R is X == Y.
+ 
+%la expresion x es distinta que la expresion y
+expresion_distinta(X,Y, R) :- R is X \== Y.
+ 
+%x es menor que
+menor_que_prolog(X,Y, R) :- R is X @< Y.
+ 
+%x es mayor  que prolog
+mayor_que_prolog(X,Y, R) :- R is X @> Y.
+ 
+%menor o igual que prolog
+menor_igual_prolog(X,Y, R) :- R is X @=< Y.
+ 
+%mayor o igual que prolog
+mayor_igual_prolog(X,Y, R) :- R is X @>= Y.
